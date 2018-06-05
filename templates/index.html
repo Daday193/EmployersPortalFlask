@@ -1,0 +1,17 @@
+<html>
+<head>
+	<title>Hello World!</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename= "css/bootstrap.min.css")}}">
+	<link rel="icon" type="imagem/jpg" href="/static/icon apcef.jpg" />
+</head>
+<body>
+    <h1>Hello World!</h1>
+    {% if user:%}
+    <p>Bem vindo a minha página, {{ user }}!</p>
+    {% else %}
+    <p>Bem vindo a minha página.</p>
+    {% endif %}
+
+    <script src="{{ url_for('static',filename="js/bootstrap.min.js")}}"></script>
+</body>
+</html>   

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pessoal</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="{{ url_for('static',filename= "css/bootstrap.min.css")}}">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="{{ url_for('static',filename="css/bootstrap-combined.min.css")}}">
+</head>
+<body>
+
+ 
+	<div id="main" class="container-fluid">
+  
+  <h3 class="page-header">Atualizar cadastro</h3>
+  
+ 
+  <form class="form-group" action="" method=post>
+	
+  	<div class="row">
+  	  <div class="form-group col-md-6">
+  	  	<label for="InputNome">Nome Completo:</label>
+  	  	{{ form.InputNome(class="form-control",id="InputNome")}}
+  	  </div>
+	  <div class="form-group col-md-3">
+  	  	<label for="InputNaturalidade">Naturalidade:</label>
+  	  	{{ form.InputNaturalidade(class="form-control",id="InputNaturalidade")}}
+  	  </div>
+	  <div class="form-group col-md-3">
+  	  	<label for="InputNascimento">Nascimento:</label>
+  	  	{{ form.InputNascimento(class="form-control",id="InputNascimento",type="date")}}
+  	  </div>
+	</div>
+	<h6><strong>RG:</strong></h6>
+	<hr class="my-1">
+	<div class="row">
+  	  <div class="form-group col-md-4">
+  	  	<label for="InputNumRG">Num:</label>
+  	  	{{ form.InputNumRG(class="form-control",id="InputNumRG")}}
+  	  </div>
+	  <div class="form-group col-md-4">
+  	  	<label for="InputEmissaoRG">Dt.Emissao:</label>
+  	  	{{ form.InputEmissaoRG(class="form-control",id="InputEmissaoRG",type="date")}}
+  	  </div>
+	  <div class="form-group col-md-4">
+  	  	<label for="InputEmissorRG">Orgão emissor:</label>
+  	  	{{ form.InputEmissorRG(class="form-control",id="InputEmissorRG")}}
+  	  </div>
+	</div>
+	
+	<h6><strong>CNH:</strong></h6>
+	<hr class="my-1">
+	<div class="row">
+  	  <div class="form-group col-md-3">
+  	  	<label for="InputNumCNH">Num:</label>
+  	  	{{ form.InputNumCNH(class="form-control",id="InputNumCNH")}}
+  	  </div>
+	  <div class="form-group col-md-2">
+  	  	<label for="InputEmissaoCNH">Dt.Emissao:</label>
+  	  	{{ form.InputEmissaoCNH(class="form-control",id="InputEmissaoCNH",type="date")}}
+  	  </div>
+	  <div class="form-group col-md-2">
+  	  	<label for="InputEmissorCNH">Orgão emissor:</label>
+  	  	{{ form.InputEmissorCNH(class="form-control",id="InputEmissorCNH")}}
+  	  </div>
+	  <div class="form-group col-md-2">
+  	  	<label for="InputVencimentoCNH">Vencimento:</label>
+  	  	{{ form.InputVencimentoCNH(class="form-control",id="InputVencimentoCNH",type="date")}}
+  	  </div>
+	  <div class="form-group col-md-2">
+  	  	<label for="InputCategoriaCNH">Categoria:</label>
+  	  	{{ form.InputCategoriaCNH(class="form-control",id="InputCategoriaCNH")}}
+  	  </div>
+	  <div class="form-group col-md-1">
+  	  	<label for="InputUFCNH">UF:</label>
+  	  	{{ form.InputUFCNH(class="form-control",id="InputUFCNH")}}
+  	  </div>
+	
+	</div>
+	<hr class="my-1">
+	<div class="row">
+  	  <div class="form-group col-md-3">
+  	  	<label for="InputCPF">CPF:</label>
+  	  	{{ form.InputCPF(class="form-control",id="InputCPF")}}
+  	  </div>
+	  <div class="form-group col-md-3">
+  	  	<label for="InputPIS">PIS:</label>
+  	  	{{ form.InputPIS(class="form-control",id="InputPIS")}}
+  	  </div>
+	  <div class="form-group col-md-3">
+  	  	<label for="InputCasado">Estado civil:</label>
+  	  	{{ form.InputCasado(class="form-control",id="InputCasado")}}
+  	  </div>
+	  <div class="form-group col-md-3">
+  	  	<label for="InputReservista">Cert. Reservista:</label>
+  	  	{{ form.InputReservista(class="form-control",id="InputReservista")}}
+  	  </div>
+	</div>
+	
+	<h6><strong>CTPS:</strong></h6>
+	<hr class="my-1">
+	<div class="row">
+  	  <div class="form-group col-md-3">
+  	  	<label for="InputCTPS">Num:</label>
+  	  	{{ form.InputCTPS(class="form-control",id="InputCTPS")}}
+  	  </div>
+	  <div class="form-group col-md-3">
+  	  	<label for="InputSerieCTPS">Serie:</label>
+  	  	{{ form.InputSerieCTPS(class="form-control",id="InputSerieCTPS")}}
+	  </div>
+	  <div class="form-group col-md-3">
+  	  	<label for="InputEmissaoCTPS">Dt.Emissao:</label>
+  	  	{{ form.InputEmissaoCTPS(class="form-control",id="InputEmissaoCTPS",type="date")}}
+  	  </div>
+	  <div class="form-group col-md-3">
+  	  	<label for="InputUfCTPS">UF</label>
+  	  	{{ form.InputUfCTPS(class="form-control",id="InputUfCTPS")}}
+  	  </div>
+	
+	</div>
+	
+	<hr />
+	
+	<div class="row">
+	  <div class="col-md-12">
+	  	<!-- <button type="submit" class="btn btn-primary">Próxima</button>-->
+		<a href="/parentesco" class="btn btn-primary">Próxima</a>
+		<a href="/index" class="btn btn-default">Cancelar</a>
+	  </div>
+	</div>
+
+  </form>
+ </div>
+ 
+
+ <script src="js/jquery.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

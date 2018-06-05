@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Parentesco</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="{{ url_for('static',filename= "css/bootstrap.min.css")}}">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="{{ url_for('static',filename="css/bootstrap-combined.min.css")}}">
+</head>
+<body>
+
+ 
+	<div id="main" class="container-fluid">
+  
+  <h3 class="page-header">Atualizar cadastro trabalho</h3>
+  
+ 
+  <form class="form-group" action="" method=post>
+	
+
+	<h6><strong>HORÁRIO DE TRABALHO:</strong></h6>
+	<hr class="my-1">
+	<div class="row">
+  	  <div class="form-group col-md-5">
+  	  	<label for="InputDe">De:</label>
+  	  	{{ form.InputDe(class="form-control",id="InputDe", placeholder="Segunda")}}
+  	  </div>
+	  <div class="form-group col-md-5">
+  	  	<label for="InputAte">Até:</label>
+  	  	{{ form.InputAte(class="form-control",id="InputAte", placeholder="Segunda")}}
+  	  </div>
+	  <div class="form-group col-md-5">
+	  <label for="InputDe">De:</label>
+  	  	{{ form.InputDe(class="form-control",id="InputDe", placeholder="Terça")}}
+  	  </div>
+	  <div class="form-group col-md-5">
+  	  	<label for="InputAte">Até:</label>
+  	  	{{ form.InputAte(class="form-control",id="InputAte", placeholder="Terça")}}
+  	  </div>
+	  <div class="form-group col-md-5">
+	  <label for="InputDe">De:</label>
+  	  	{{ form.InputDe(class="form-control",id="InputDe", placeholder="Quarta")}}
+  	  </div>
+	  <div class="form-group col-md-5">
+  	  	<label for="InputAte">Até:</label>
+  	  	{{ form.InputAte(class="form-control",id="InputAte", placeholder="Quarta")}}
+  	  </div>
+	  <div class="form-group col-md-5">
+	  <label for="InputDe">De:</label>
+  	  	{{ form.InputDe(class="form-control",id="InputDe", placeholder="Quinta")}}
+  	  </div>
+	  <div class="form-group col-md-5">
+  	  	<label for="InputAte">Até:</label>
+  	  	{{ form.InputAte(class="form-control",id="InputAte", placeholder="Quinta")}}
+  	  </div>
+	  <div class="form-group col-md-5">
+	  <label for="InputDe">De:</label>
+  	  	{{ form.InputDe(class="form-control",id="InputDe", placeholder="Sexta")}}
+  	  </div>
+	  <div class="form-group col-md-5">
+  	  	<label for="InputAte">Até:</label>
+  	  	{{ form.InputAte(class="form-control",id="InputAte", placeholder="Sexta")}}
+  	  </div>
+	  <div class="form-group col-md-5">
+	  <label for="InputDe">De:</label>
+  	  	{{ form.InputDe(class="form-control",id="InputDe", placeholder="Sábado")}}
+  	  </div>
+	  <div class="form-group col-md-5">
+  	  	<label for="InputAte">Até:</label>
+  	  	{{ form.InputAte(class="form-control",id="InputAte", placeholder="Sábado")}}
+  	  </div>
+	  <div class="form-group col-md-5">
+	  <label for="InputDe">De:</label>
+  	  	{{ form.InputDe(class="form-control",id="InputDe", placeholder="Domingo")}}
+  	  </div>
+	  <div class="form-group col-md-5">
+  	  	<label for="InputAte">Até:</label>
+  	  	{{ form.InputAte(class="form-control",id="InputAte", placeholder="Domingo")}}
+  	  </div>
+	  
+	</div>
+	
+	
+	<hr/>
+	
+	<div class="row">
+	  <div class="col-md-12">
+	  	<!-- <button type="submit" class="btn btn-primary">Próxima</button>-->
+		<a href="/trabalho" class="btn btn-primary">Próxima</a>
+		<a href="/index" class="btn btn-default">Cancelar</a>
+	  </div>
+	</div>
+
+  </form>
+
+ 
+
+ <script src="js/jquery.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

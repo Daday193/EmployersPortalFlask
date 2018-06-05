@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Parentesco</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="{{ url_for('static',filename= "css/bootstrap.min.css")}}">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="{{ url_for('static',filename="css/bootstrap-combined.min.css")}}">
+</head>
+<body>
+
+ 
+	<div id="main" class="container-fluid">
+  
+  <h3 class="page-header">Atualizar cadastro parentesco</h3>
+  
+ 
+  <form class="form-group" action="" method=post>
+	
+
+	<h6><strong>CÔNJUGE:</strong></h6>
+	<hr class="my-1">
+	<div class="row">
+  	  <div class="form-group col-md-4">
+  	  	<label for="InputConjuge">Nome:</label>
+  	  	{{ form.InputConjuge(class="form-control",id="InputConjuge")}}
+  	  </div>
+
+	</div>
+	
+	<h6><strong>FILHOS:</strong></h6>
+	<hr class="my-1">
+	<div class="row">
+  	  <div class="form-group col-md-3">
+  	  	<label for="InputFilho1">Nome:</label>
+  	  	{{ form.InputFilho1(class="form-control",id="InputFilho1")}}
+  	  </div>
+	  <div class="form-group col-md-2">
+  	  	<label for="InputFilho1CPF">CPF:</label>
+  	  	{{ form.InputFilho1CPF(class="form-control",id="InputFilho1CPF")}}
+  	  </div>
+	  <div class="form-group col-md-3">
+  	  	<label for="InputFilho2">Nome:</label>
+  	  	{{ form.InputFilho2(class="form-control",id="InputFilho2")}}
+  	  </div>
+	  <div class="form-group col-md-2">
+  	  	<label for="InputFilho2CPF">CPF:</label>
+  	  	{{ form.InputFilho2CPF(class="form-control",id="InputFilho2CPF")}}
+  	  </div>
+	  <div class="form-group col-md-3">
+  	  	<label for="InputFilho3">Nome:</label>
+  	  	{{ form.InputFilho3(class="form-control",id="InputFilho3")}}
+  	  </div>
+	  <div class="form-group col-md-2">
+  	  	<label for="InputFilho3CPF">CPF:</label>
+  	  	{{ form.InputFilho3CPF(class="form-control",id="InputFilho3CPF")}}
+  	  </div>
+	  	  <div class="form-group col-md-3">
+  	  	<label for="InputFilho4">Nome:</label>
+  	  	{{ form.InputFilho4(class="form-control",id="InputFilho4")}}
+  	  </div>
+	  <div class="form-group col-md-2">
+  	  	<label for="InputFilho4CPF">CPF:</label>
+  	  	{{ form.InputFilho4CPF(class="form-control",id="InputFilho4CPF")}}
+  	  </div>
+	   </div>
+	
+
+	<h6><strong>PAIS:</strong></h6>
+	<hr class="my-1">
+	<div class="row">
+  	  <div class="form-group col-md-3">
+  	  	<label for="InputPai">Nome:</label>
+  	  	{{ form.InputPai(class="form-control",id="InputPai")}}
+  	  </div>
+	  <div class="form-group col-md-3">
+  	  	<label for="InputMae">Nome:</label>
+  	  	{{ form.InputMae(class="form-control",id="InputMae")}}
+  	  </div>
+	   </div>
+	<hr/>
+	
+	<div class="row">
+	  <div class="col-md-12">
+	  	<!-- <button type="submit" class="btn btn-primary">Próxima</button>-->
+		<a href="/trabalho" class="btn btn-primary">Próxima</a>
+		<a href="/index" class="btn btn-default">Cancelar</a>
+	  </div>
+	</div>
+
+  </form>
+
+ 
+
+ <script src="js/jquery.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
